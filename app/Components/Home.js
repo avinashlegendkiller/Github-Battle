@@ -10,6 +10,7 @@ class Home extends Component {
             <div>
                 <ParentAppBar />
                 <TabsNavigation />
+                
             </div>
         )
     }
