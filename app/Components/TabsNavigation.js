@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+//components
+import Popular from './Popular';
 //ui
 import * as Colors from 'material-ui/styles/colors';
 import {Tabs, Tab} from 'material-ui/Tabs';
@@ -31,7 +33,7 @@ function SelectTab (props) {
             <SwipeableViews index={props.selectedTabIndex} onChangeIndex={props.onSelectTabIndex.bind(null)}>
                 <div style={{height: '100px',backgroundColor: Colors.grey200}}>Home</div>
                 <div style={{height: '100px',backgroundColor: Colors.grey100}}>Battle</div>
-                <div style={{height: '100px',backgroundColor: Colors.grey300}}>Popular</div>
+                <Popular />
             </SwipeableViews> 
             </div>   
     )
@@ -77,8 +79,8 @@ class TabsNavigation extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            selectedOption: 'Home',
-            selectedTabIndex: 0
+            selectedOption: 'Popular',
+            selectedTabIndex: 2
         }
 
         //functions are bound to 'this' of current class
