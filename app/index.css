@@ -3,6 +3,10 @@ body{
     margin: 0px !important;
 }
 
+.nav-up {
+    top: -64px !important;
+}
+
 ul {
     padding: 0;
 }
@@ -31,3 +35,71 @@ li {
     /* box-shadow */
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 5px, rgba(0, 0, 0, 0.05) 0px 1px 1px !important;
 }
+
+.content-center {
+    text-align: center;
+}
+/* tabs */
+.tab-flex {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+/* popular tab */
+.popular-tab-content-parent {
+    margin: 16px;
+}
+
+.popular-child-item-padding {
+        padding: 8px;
+    }
+
+    /* popular tab child */
+    .popular-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .popular-item {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .popular-rank {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .space-list-items {
+        margin-bottom: 7px;
+    }
+
+    .avatar {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .popular-inner-padding {
+        padding: 2px;
+    }
+
+    .search-message-container {
+        height: 250px;
+         max-height: 100%;
+    }
+    .search-message-container:before {
+        content: " ";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        max-width: 0.001%; /* Just in case the text wrapps, you shouldn't notice it */
+    }
+    .search-message-container :first-child {
+        display:inline-block;
+        vertical-align:middle;
+        max-width: 99.999%;
+    }
+    

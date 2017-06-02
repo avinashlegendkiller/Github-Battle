@@ -16,7 +16,7 @@ const Menu = (props) => (
     targetOrigin={{horizontal: 'right', vertical: 'top'}}
     anchorOrigin={{horizontal: 'right', vertical: 'top'}}
   >
-    <MenuItem primaryText="About" />
+    <MenuItem primaryText="Settings" />
   </IconMenu>
 );
 
@@ -24,6 +24,7 @@ class ParentAppBar extends Component {
     render() {
         return(
             <AppBar
+            id="app-bar"
             className="parent-appbar"
             title="Github Battle"
             iconElementLeft={<IconButton><GithubIcon /></IconButton>}

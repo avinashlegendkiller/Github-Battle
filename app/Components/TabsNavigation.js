@@ -33,7 +33,7 @@ function SelectTab (props) {
             <SwipeableViews index={props.selectedTabIndex} onChangeIndex={props.onSelectTabIndex.bind(null)}>
                 <div style={{height: '100px',backgroundColor: Colors.grey200}}>Home</div>
                 <div style={{height: '100px',backgroundColor: Colors.grey100}}>Battle</div>
-                <Popular />
+                <Popular className="tab-flex"/>
             </SwipeableViews> 
             </div>   
     )
