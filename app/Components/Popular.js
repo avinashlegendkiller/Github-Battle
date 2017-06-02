@@ -13,7 +13,9 @@ const languages = [
     'R',
     'Ruby',
     'Python',
+    'Swift'
 ];
+languages.sort();
 
 function LoadingSearch() {
     return(
@@ -125,6 +127,7 @@ class Popular extends Component {
                     //repos is null, call api
                     api.fetchPopularRepos(language)
                         .then(function(repo) {
+                            console.log('response',repo);
                             this.setState({repos: repo});
                         }.bind(this));
             }.bind(this));
